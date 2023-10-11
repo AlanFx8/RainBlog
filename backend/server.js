@@ -4,7 +4,6 @@ require("dotenv").config();
 //Other imports
 const express = require('express');
 const fileuploader = require('express-fileupload');
-const cors = require('cors');
 const connectDB = require('./config/db');
 const { errorHandler } = require('./middleware/errorMiddleware');
 
@@ -16,7 +15,6 @@ connectDB();
 
 //Start server
 const app = express();
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(fileuploader());

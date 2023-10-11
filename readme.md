@@ -13,5 +13,5 @@ A bloging site centred on images of rain. You can view posts via infinite scroll
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot2.jpg">
+  <img src="screenshots/screenshot3.jpg">
 </p>

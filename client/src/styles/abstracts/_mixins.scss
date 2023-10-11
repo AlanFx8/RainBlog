@@ -1,0 +1,36 @@
+//Media-Query mixins
+//Our 'middle' sized layout
+@mixin for-tablet-landscape-up {
+    @media (min-width: 40em) { @content; }
+}  
+
+//Our 'big' sized layout
+@mixin for-desktop-up {
+    @media (min-width: 80em) { @content; }
+}
+
+//MIXINS
+@mixin submit-button-style {
+    display: block;
+    margin: auto;
+    background-color: #0385b8;
+    font-weight: bold;
+    width: 40%;
+    padding: .5em;
+    border: solid 1px #000000;
+    border-radius: .5em;
+    transition: all .5s;
+
+    &:disabled {
+        background-color: #23bbf7;
+    }
+
+    &:hover {
+        background-color: #23bbf7;
+        font-style: italic;
+
+        &:disabled {
+            cursor: default;
+        }
+    }
+}

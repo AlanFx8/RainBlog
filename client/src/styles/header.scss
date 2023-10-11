@@ -1,0 +1,32 @@
+//IMPORTS
+@use './abstracts' as *;
+
+//MAIN-TITLE
+#main-title {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    overflow: hidden;
+
+    background-color: #444;
+    background-image: url('../images/banner.jpg');
+    background-size: 100% 200%;
+    background-position-y: 30%;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #b2f3f7;
+    font-family: 'ravenscroftregular', 'Russo One', sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+
+    border-bottom: $whiteBorder;
+
+    //Media Query
+    @include for-tablet-landscape-up {
+        height: 6em;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,78 @@
+//IMPORTS
+@use './abstracts' as *;
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300&display=swap');
+
+//DATE
+.panel .date {
+    display: block;
+    padding: .5em;
+    color: #222222;
+    font-weight: bold;
+}
+
+//SECTIONS
+.post-sections-container {
+    padding: .5em;
+}
+
+//ITEM-SECTIONS
+.image-items-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-items-section, .image-items-section {
+    margin-bottom: 1em;
+}
+
+//IMAGES
+.image-container {
+    width: 256px;
+    height: 256px;
+    border: 1px solid rgba($color: #707070, $alpha: .5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container > img:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+//SEPERATE-LINK
+.seperate-link {
+    padding: .4em;
+    font-weight: bold;
+    background-color: rgba(133, 205, 250, .5);
+    border-bottom: $blackBorder;
+}
+
+.seperate-link:hover {
+    font-style: italic;
+}
+
+//ADMIN SECTION
+.admin-panel {
+    background-color: rgba(133, 205, 250, .5);
+    padding: .5em;
+    border-bottom: $blackBorder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.admin-panel > button {
+    background-color: rgb(2, 113, 218);
+    width: 48%;
+    padding: .25em;
+    border-radius: .5em;
+    font-weight: bold;
+}
+
+.admin-panel > button:hover {
+    background-color: rgb(68, 117, 253);
+    font-style: italic;
+}

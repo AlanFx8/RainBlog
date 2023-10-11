@@ -1,0 +1,15 @@
+//IMPORTS
+@use './abstracts' as *;
+
+//THE FOOTER
+#main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000000;
+    color: #ffffff;
+    border-top: $whiteBorder;
+    height: 4em;
+    text-align: center;
+}

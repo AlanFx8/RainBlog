@@ -1,0 +1,29 @@
+//IMPORTS
+@use './abstracts' as *; //For Media Queries
+
+//FORM
+.form-field {
+    line-height: 3em;
+}
+
+.form-field > label {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    padding: .4em;
+}
+
+.form-field > input {
+    padding: .4em;
+    border: 1px solid lightgray;
+    border-radius: .4em;
+}
+
+.form-field > input:focus {
+    border: solid 2px rgba(0, 200, 218, .75);
+}
+
+//SUBMIT BUTTON
+#submit-button {
+    @include submit-button-style;
+}

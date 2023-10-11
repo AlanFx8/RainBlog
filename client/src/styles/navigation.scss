@@ -1,0 +1,74 @@
+//IMPORTS
+@use './abstracts' as *;
+
+//THE NAVBAR
+#main-nav {
+    background-color: rgba(0, 218, 218, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8em;
+    border-bottom: $whiteBorder;
+}
+
+#main-nav.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+//THE MAIN NAVIGATION
+#nav-main-menu {
+    width: 80%;
+    display: none;
+    list-style: none;
+    text-transform: uppercase;
+
+    @include for-tablet-landscape-up {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+#nav-main-menu li {
+    width: 100%;
+    background-color: rgba(0, 155, 95, 0.5);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#nav-main-menu li:hover {
+    display: block;
+    background-color: rgba(3, 70, 194, 0.25);
+    font-style: italic;
+    box-shadow: 0 0 2px 2px rgb(108, 255, 248, .5);
+}
+
+#nav-main-menu a {
+    text-decoration: none;
+    line-height: 2em;
+    color: #000000;
+    display: block;
+    transition: all .5s;
+}
+
+#nav-main-menu a:hover {
+    color: rgb(108, 255, 248);
+}
+
+//THE SMALL NAVIGATION
+#nav-small-menu {
+    outline: solid 1px #aaaaaa;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+
+    @include for-tablet-landscape-up {
+        display: none;
+    }
+}

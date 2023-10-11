@@ -1,0 +1,28 @@
+.list-posts-li {
+    background-color: rgba(0, 135, 212, 0.5);
+    list-style: none;
+    transition: all .5s;
+}
+
+.list-posts-li:hover {
+    background-color: rgba(22, 168, 250, 0.5);
+}
+
+.list-posts-li:nth-child(odd) {
+    background-color: rgba(0, 18, 220, 0.5);
+}
+
+.list-posts-li:nth-child(odd):hover {
+    background-color: rgba(50, 68, 255, 0.5);
+}
+
+.list-posts-li a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.list-posts-li a:hover {
+    font-style: italic;
+}
